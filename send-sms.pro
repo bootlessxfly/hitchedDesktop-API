@@ -7,7 +7,8 @@
 QT += widgets core gui quick
 #QT += qml quick widgets sql core bluetooth printsupport androidextras
 QT += androidextras
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    permissions.cpp
 
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -18,7 +19,8 @@ TEMPLATE = app
 
 SOURCES += widget.cpp
 
-HEADERS  += widget.h
+HEADERS  += widget.h \
+    permissions.h
 
 FORMS    += widget.ui
 
