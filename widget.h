@@ -2,7 +2,7 @@
 #define WIDGET_H
 
 #include <QtWidgets>
-#include <QtAndroid>
+#include <QtAndroidExtras>
 #include <QAndroidJniObject>
 
 

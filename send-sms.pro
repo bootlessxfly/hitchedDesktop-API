@@ -4,11 +4,10 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT += widgets core gui quick
 #QT += qml quick widgets sql core bluetooth printsupport androidextras
-QT += widgets
+QT += androidextras
 SOURCES += main.cpp
-QT += quick androidextras
 
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -17,15 +16,14 @@ TARGET = send-sms
 TEMPLATE = app
 
 
-SOURCES += main.cpp\
-        widget.cpp
+SOURCES += widget.cpp
 
 HEADERS  += widget.h
 
 FORMS    += widget.ui
 
 CONFIG += mobility
-MOBILITY = 
+MOBILITY =
 
 DISTFILES += \
     android/gradle/wrapper/gradle-wrapper.jar \
@@ -34,7 +32,14 @@ DISTFILES += \
     android/build.gradle \
     android/gradle/wrapper/gradle-wrapper.properties \
     android/gradlew \
-    android/gradlew.bat
+    android/gradlew.bat \
+    android-sources/AndroidManifest.xml \
+    android-sources/gradle/wrapper/gradle-wrapper.jar \
+    android-sources/gradlew \
+    android-sources/res/values/libs.xml \
+    android-sources/build.gradle \
+    android-sources/gradle/wrapper/gradle-wrapper.properties \
+    android-sources/gradlew.bat
 
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android-sources
 
