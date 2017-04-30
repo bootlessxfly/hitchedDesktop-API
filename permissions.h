@@ -3,4 +3,6 @@
 
 bool checkPermissions();
 
+void requestPermission();
+
 #endif // PERMISSIONS_H

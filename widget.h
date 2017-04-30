@@ -4,6 +4,7 @@
 #include <QtWidgets>
 #include <QtAndroidExtras>
 #include <QAndroidJniObject>
+#include <QListWidgetItem>
 
 
 
@@ -21,6 +22,7 @@ public:
 
 private slots:
     void on_pushButton_clicked();
+    void onAddressItemClicked(QListWidgetItem* item);
 
 private:
     Ui::Widget *ui;

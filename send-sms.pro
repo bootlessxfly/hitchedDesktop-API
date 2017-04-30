@@ -8,7 +8,8 @@ QT += widgets core gui quick
 #QT += qml quick widgets sql core bluetooth printsupport androidextras
 QT += androidextras
 SOURCES += main.cpp \
-    permissions.cpp
+    permissions.cpp \
+    addressbook.cpp
 
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -20,7 +21,8 @@ TEMPLATE = app
 SOURCES += widget.cpp
 
 HEADERS  += widget.h \
-    permissions.h
+    permissions.h \
+    addressbook.h
 
 FORMS    += widget.ui
 
@@ -41,7 +43,8 @@ DISTFILES += \
     android-sources/res/values/libs.xml \
     android-sources/build.gradle \
     android-sources/gradle/wrapper/gradle-wrapper.properties \
-    android-sources/gradlew.bat
+    android-sources/gradlew.bat \
+    android-sources/src/com/github/hitchedDesktop_API/AddressBook.java
 
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android-sources
 
